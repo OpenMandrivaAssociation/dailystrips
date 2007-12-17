@@ -12,7 +12,6 @@ Source:		%{name}-%{version}.tar.bz2
 # (misc) Use Date::Manip instead of Date::Parse
 Patch0:		%{name}-1.0.28-module_date.patch.bz2
 Url:		http://dailystrips.sf.net/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
 BuildArch:	noarch
 Requires:	perl > 5.6

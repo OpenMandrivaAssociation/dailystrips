@@ -1,6 +1,6 @@
 %define	name	dailystrips
 %define	version	1.0.28
-%define	release	%mkrel 4
+%define	release	%mkrel 6
 
 Name:		%{name}
 Summary:	A program to automatically download your favorite online comic strips 

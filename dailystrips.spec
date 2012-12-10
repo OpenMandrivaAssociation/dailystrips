@@ -54,3 +54,43 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/%{name}/
 %{_datadir}/%{name}/*
 
+
+
+%changelog
+* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.0.28-6mdv2009.0
++ Revision: 243888
+- rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 1.0.28-4mdv2008.1
++ Revision: 140717
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+    - import dailystrips
+
+
+* Thu Aug 03 2006 Lenny Cartier <lenny@mandriva.com> 1.0.28-4mdv2007.0
+- rebuild
+
+* Fri Mar 11 2005 Eskild Hustvedt <eskild@mandrake.org> 1.0.28-3mdk
+- Include dailystrips-update
+
+* Thu Feb 03 2005 Lenny Cartier <lenny@mandrakesoft.com> 1.0.28-2mdk
+- rebuild
+
+* Sun Dec 14 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 1.0.28-1mdk
+- 1.0.28
+- spec cosmetics
+- rm -rf $RPM_BUILD_ROOT in %%install, not %%prep
+- remove perl dependencies, rpm will figure out these by itself now:)
+- regenerate P0
+- fix generation of README.mandrake
+
+* Thu Apr 03 2003  Lenny Cartier <lenny@mandrakesoft.com> 1.0.27-1mdk
+- 1.0.27
+
+* Tue Apr 01 2003 Lenny Cartier <lenny@mandrakesoft.com> 1.0.25-1mdk
+- from Michael Scherer <scherer.michael@free.fr> :
+	- initial Mandrake package
+	- patch to use the module Date::Manip instead of Date::Parse
